@@ -17,32 +17,29 @@ namespace BuffetFrancisco.View
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_acessar_Click(object sender, EventArgs e)
         {
             string usuario = txt_usuario.Text;
             string senha = txt_senha.Text;
 
             if (usuario == "admin" && senha == "123")
             {
-                this.Visible = false;
+                this.Hide();
                 MenuTela Menu = new MenuTela();
-                Menu.Show(this);
+                Menu.FormClosed += (s, args) => this.Close();
+                Menu.Show();
             }
-            else 
+            else
             {
                 MessageBox.Show("Senha ou usuário incorreto");
             }
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_sair_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
     }
 }
+

@@ -29,104 +29,115 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginTela));
-            label1 = new Label();
-            label2 = new Label();
-            txt_senha = new TextBox();
-            txt_usuario = new TextBox();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
+            label1 = new Label();
+            btn_acessar = new Button();
+            txt_senha = new TextBox();
+            label2 = new Label();
+            txt_usuario = new TextBox();
+            label3 = new Label();
+            btn_sair = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._5545071;
+            pictureBox1.Location = new Point(23, 27);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(282, 212);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(275, 129);
+            label1.Location = new Point(358, 94);
             label1.Name = "label1";
-            label1.Size = new Size(45, 17);
-            label1.TabIndex = 0;
-            label1.Text = "Senha";
-            label1.Click += label1_Click;
+            label1.Size = new Size(55, 17);
+            label1.TabIndex = 1;
+            label1.Text = "Usuário";
+            // 
+            // btn_acessar
+            // 
+            btn_acessar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_acessar.Location = new Point(460, 260);
+            btn_acessar.Name = "btn_acessar";
+            btn_acessar.Size = new Size(75, 23);
+            btn_acessar.TabIndex = 2;
+            btn_acessar.Text = "Acessar";
+            btn_acessar.UseVisualStyleBackColor = true;
+            btn_acessar.Click += btn_acessar_Click;
+            // 
+            // txt_senha
+            // 
+            txt_senha.Location = new Point(358, 216);
+            txt_senha.Name = "txt_senha";
+            txt_senha.Size = new Size(279, 23);
+            txt_senha.TabIndex = 3;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ControlLightLight;
-            label2.Location = new Point(275, 65);
+            label2.Location = new Point(358, 187);
             label2.Name = "label2";
-            label2.Size = new Size(55, 17);
-            label2.TabIndex = 1;
-            label2.Text = "Usuário";
-            // 
-            // txt_senha
-            // 
-            txt_senha.AcceptsTab = true;
-            txt_senha.Location = new Point(275, 149);
-            txt_senha.Name = "txt_senha";
-            txt_senha.Size = new Size(251, 23);
-            txt_senha.TabIndex = 2;
+            label2.Size = new Size(45, 17);
+            label2.TabIndex = 4;
+            label2.Text = "Senha";
             // 
             // txt_usuario
             // 
-            txt_usuario.Location = new Point(275, 85);
+            txt_usuario.Location = new Point(358, 128);
             txt_usuario.Name = "txt_usuario";
-            txt_usuario.Size = new Size(251, 23);
-            txt_usuario.TabIndex = 3;
+            txt_usuario.Size = new Size(279, 23);
+            txt_usuario.TabIndex = 5;
             // 
-            // pictureBox1
+            // label3
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(38, 52);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(199, 157);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
+            label3.AutoSize = true;
+            label3.Font = new Font("Showcard Gothic", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ControlLightLight;
+            label3.Location = new Point(358, 27);
+            label3.Name = "label3";
+            label3.Size = new Size(278, 33);
+            label3.TabIndex = 6;
+            label3.Text = "Buffet Francisco";
             // 
-            // button1
+            // btn_sair
             // 
-            button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(349, 191);
-            button1.Name = "button1";
-            button1.Size = new Size(125, 37);
-            button1.TabIndex = 5;
-            button1.Text = "Entrar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(38, 245);
-            button2.Name = "button2";
-            button2.Size = new Size(78, 26);
-            button2.TabIndex = 6;
-            button2.Text = "Sair";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btn_sair.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_sair.Location = new Point(23, 303);
+            btn_sair.Name = "btn_sair";
+            btn_sair.Size = new Size(46, 23);
+            btn_sair.TabIndex = 7;
+            btn_sair.Text = "Sair";
+            btn_sair.UseVisualStyleBackColor = true;
+            btn_sair.Click += btn_sair_Click;
             // 
             // LoginTela
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Maroon;
-            ClientSize = new Size(576, 283);
-            ControlBox = false;
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(pictureBox1);
+            ClientSize = new Size(688, 338);
+            Controls.Add(btn_sair);
+            Controls.Add(label3);
             Controls.Add(txt_usuario);
-            Controls.Add(txt_senha);
             Controls.Add(label2);
+            Controls.Add(txt_senha);
+            Controls.Add(btn_acessar);
             Controls.Add(label1);
+            Controls.Add(pictureBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            KeyPreview = true;
+            MaximizeBox = false;
             Name = "LoginTela";
-            Text = "Sistema de PDV Buffet Francisco";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "LoginTela";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -134,12 +145,13 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private TextBox txt_senha;
-        private TextBox txt_usuario;
         private PictureBox pictureBox1;
-        private Button button1;
-        private Button button2;
+        private Label label1;
+        private Button btn_acessar;
+        private TextBox txt_senha;
+        private Label label2;
+        private TextBox txt_usuario;
+        private Label label3;
+        private Button btn_sair;
     }
 }
