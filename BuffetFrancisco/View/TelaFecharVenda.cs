@@ -12,14 +12,19 @@ namespace BuffetFrancisco.View
 {
     public partial class TelaFecharVenda : Form
     {
-        public TelaFecharVenda()
+
+        private int tudo;
+
+        public TelaFecharVenda(int tudo)
         {
+            this.tudo = tudo;
             InitializeComponent();
         }
 
         private void TelaFecharVenda_Load(object sender, EventArgs e)
         {
             lbl_data.Text = DateTime.Now.ToString();
+            lbl_valorvenda.Text = "R$ " + tudo + ",00".ToString();
         }
     }
 }

@@ -109,7 +109,7 @@ namespace BuffetFrancisco.View
 
         private void btn_finalizar_Click(object sender, EventArgs e)
         {
-            TelaFecharVenda telaFecharVenda = new TelaFecharVenda();
+            TelaFecharVenda telaFecharVenda = new TelaFecharVenda(tudo);
             telaFecharVenda.Show();
         }
     }
